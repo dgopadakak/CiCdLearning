@@ -1,5 +1,5 @@
 package com.dgopadakak.cicdlearning
 
 class Multiplier {
-    fun timesTwo(n: Int) = n * 2
+    fun timesTwo(number: Int) = number * 2
 }
