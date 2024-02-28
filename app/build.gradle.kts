@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+val isExists = file("keystore/keystore_config.properties").exists()
+
 android {
     namespace = "com.dgopadakak.cicdlearning"
     compileSdk = 34
@@ -19,7 +21,7 @@ android {
 
     signingConfigs {
         create("release") {
-            if (file("keystore/keystore_config.properties").exists()) {
+            if (isExists) {
                 val keystorePropsFile = file("keystore/keystore_config.properties")
                 val items = HashMap<String, String>()
                 keystorePropsFile.forEachLine {
