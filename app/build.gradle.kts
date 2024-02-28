@@ -19,9 +19,8 @@ android {
 
     signingConfigs {
         create("release") {
-            val keystorePropsFile = file("keystore/keystore_config.properties")
-
-            if (keystorePropsFile.exists()) {
+            if (file("keystore/keystore_config.properties").exists()) {
+                val keystorePropsFile = file("keystore/keystore_config.properties")
                 val items = HashMap<String, String>()
                 keystorePropsFile.forEachLine {
                     items[it.split("=")[0]] = it.split("=")[1]
