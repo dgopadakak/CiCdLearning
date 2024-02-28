@@ -5,5 +5,5 @@ class Multiplier {
 
     fun timesThree(number: Int) = number * 3
 
-    fun timesFour(number: Int) = number * 3
+    fun timesFour(number: Int) = number * 4
 }
