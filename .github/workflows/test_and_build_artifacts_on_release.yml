@@ -6,7 +6,6 @@ on:
       - master
 
 env:
-  #KEYSTORE_FILE: ${{ secrets.KEYSTORE_FILE }}
   KEYSTORE_PASS: ${{ secrets.KEYSTORE_PASS }}
   KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
   KEY_PASS: ${{ secrets.KEY_PASS }}
