@@ -3,8 +3,6 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
-val isExists = file("keystore/keystore_config.properties").exists()
-
 android {
     namespace = "com.dgopadakak.cicdlearning"
     compileSdk = 34
@@ -21,8 +19,8 @@ android {
 
     signingConfigs {
         create("release") {
-            if (isExists) {
-                val keystorePropsFile = file("keystore/keystore_config.properties")
+            val keystorePropsFile = file("keystore/keystore_config.properties")
+            if (keystorePropsFile.exists()) {
                 val items = HashMap<String, String>()
                 keystorePropsFile.forEachLine {
                     items[it.split("=")[0]] = it.split("=")[1]
@@ -32,7 +30,7 @@ android {
                 keyAlias = items["keyAlias"]
                 keyPassword = items["keyPassword"]
             } else {
-                storeFile = file("keystore/keystoreandroid")
+                storeFile = file(System.getenv("KEYSTORE_FILE"))
                 storePassword = System.getenv("KEYSTORE_PASS")
                 keyAlias = System.getenv("KEY_ALIAS")
                 keyPassword = System.getenv("KEY_PASS")
