@@ -1,1 +1,1 @@
-In this repository I am learning how to work with CI/CD
+In this repository I am learning how to work with CI/CD.
