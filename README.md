@@ -2,4 +2,4 @@ In this repository I am learning how to work with CI/CD (literary source: https:
 
 Local repository (private): https://github.com/dgopadakak/CiCdLearning_Local
 
-[<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/SamKirkland/FTP-Deploy-Action)
+[<img alt="Deployed with SFTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/wlixcc/SFTP-Deploy-Action)
