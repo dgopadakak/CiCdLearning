@@ -3,4 +3,6 @@
     <string name="enter_the_number_edit_text_hint">Enter the number</string>
     <string name="result_blanc_text_view">Result will be here</string>
     <string name="times_two_button_text">Times two</string>
+    <string name="times_three_button_text">Times three</string>
+    <string name="times_four_button_text">Times four</string>
 </resources>

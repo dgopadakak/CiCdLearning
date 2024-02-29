@@ -16,5 +16,17 @@ class MainActivity : AppCompatActivity() {
                 findViewById<EditText>(R.id.edit_text_number).text.toString().toInt()
             ).toString()
         }
+
+        findViewById<Button>(R.id.button_times_three).setOnClickListener {
+            findViewById<TextView>(R.id.text_view_result).text = Multiplier().timesThree(
+                findViewById<EditText>(R.id.edit_text_number).text.toString().toInt()
+            ).toString()
+        }
+
+        findViewById<Button>(R.id.button_times_four).setOnClickListener {
+            findViewById<TextView>(R.id.text_view_result).text = Multiplier().timesFour(
+                findViewById<EditText>(R.id.edit_text_number).text.toString().toInt()
+            ).toString()
+        }
     }
 }
