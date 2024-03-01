@@ -5,4 +5,5 @@
     <string name="times_two_button_text">Times two</string>
     <string name="times_three_button_text">Times three</string>
     <string name="times_four_button_text">Times four</string>
+    <string name="please_enter_a_number_text">Please enter a number</string>
 </resources>
