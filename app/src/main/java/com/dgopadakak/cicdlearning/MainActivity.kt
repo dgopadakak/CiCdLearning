@@ -33,13 +33,13 @@ class MainActivity : AppCompatActivity() {
         } else {
             when(button.id) {
                 R.id.button_times_two -> findViewById<TextView>(R.id.text_view_result).text = Multiplier().timesTwo(
-                    tempNumString.toInt()
+                    tempNumString.toIntOrNull()?: 0
                 ).toString()
                 R.id.button_times_three -> findViewById<TextView>(R.id.text_view_result).text = Multiplier().timesThree(
-                    tempNumString.toInt()
+                    tempNumString.toIntOrNull()?: 0
                 ).toString()
                 R.id.button_times_four -> findViewById<TextView>(R.id.text_view_result).text = Multiplier().timesFour(
-                    tempNumString.toInt()
+                    tempNumString.toIntOrNull()?: 0
                 ).toString()
             }
         }
